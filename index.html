@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramen Rater</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script defer type="module" src="./src/index.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer type="module" src="./src/index.js"></script> <!-- Corrected path -->
 </head>
-
 <body>
   <header>
     <h3>Ramen Rater</h3>
   </header>
 
-  
-  <div id="ramen-menu">
-  
-  </div>
-
+  <div id="ramen-menu"></div>
 
   <div id="ramen-detail">
     <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
@@ -27,30 +22,36 @@
 
   <h3>Rating:</h3>
   <p>
-    <span id='rating-display'>Insert rating here</span> / 10
+    <span id="rating-display">Insert rating here</span> / 10
   </p>
   <h3>Comment:</h3>
-  <p id='comment-display'>
-    Insert comment here
-  </p>
-
+  <p id="comment-display">Insert comment here</p>
 
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
     <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" />
+    <input type="text" name="name" id="new-name" autocomplete="off" />
     <label for="new-restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
+    <input type="text" name="restaurant" id="new-restaurant" autocomplete="off" />
     <label for="new-image">Image: </label>
-    <input type="text" name="image" id="new-image" />
+    <input type="text" name="image" id="new-image" autocomplete="off" />
     <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
+    <input type="number" name="rating" id="new-rating" autocomplete="off" />
     <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
-    <input type="submit" id='submit-button' value="Create" />
+    <textarea name="new-comment" id="new-comment" autocomplete="off"></textarea>
+    <input type="submit" id="submit-button" value="Create" />
+  </form>
+
+  <!-- Optional Edit Form -->
+  <form id="edit-ramen">
+    <label for="edit-rating">Edit Rating: </label>
+    <input type="number" id="edit-rating" name="edit-rating" />
+    <label for="edit-comment">Edit Comment: </label>
+    <textarea id="edit-comment" name="edit-comment"></textarea>
+    <input type="submit" value="Update" />
   </form>
 
 </body>
-
 </html>
+
 

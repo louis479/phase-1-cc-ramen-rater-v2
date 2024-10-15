@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { Window } from 'happy-dom'
 import fs from 'fs'
 import path from 'path'
