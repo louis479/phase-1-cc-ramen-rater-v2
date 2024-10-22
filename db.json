@@ -1,44 +1,25 @@
 {
-  "ramens": [
+  "tacos": [
     {
-        "id": 1,
-        "name": "Shoyu Ramen",
-        "restaurant": "Nonono",
-        "image": "shoyu.jpg",
-        "rating": 7,
-        "comment": "Delish. Can't go wrong with a classic!"
+      "id": "1",
+      "name": "Spicy Beef Taco",
+      "image": "https://www.supervalu.co.uk/wp-content/uploads/2020/10/beef-tacos.jpg",
+      "rating": "",
+      "comment": ""
     },
     {
-      "id": 2,
-      "name": "Naruto Ramen",
-      "restaurant": "Naruto",
-      "image": "naruto.jpg",
-      "rating": 10,
-      "comment": "My absolute fave!"
+      "id": "2",
+      "name": "Veggie Taco",
+      "image": "https://www.twopeasandtheirpod.com/wp-content/uploads/2021/06/Veggie-Tacos4577.jpg",
+      "rating": "8",
+      "comment": "delicious"
     },
     {
-      "id": 3,
-      "name": "Nirvana Shiromaru",
-      "restaurant": "Ippudo",
-      "image": "nirvana.jpg",
-      "rating": "7",
-      "comment": "Do buy the hype."
-    },
-    {
-      "id": 4,
-      "name": "Gyukotsu Ramen",
-      "restaurant": "Za-Ya Ramen",
-      "image": "gyukotsu.jpg",
-      "rating": 8,
-      "comment": "Good to the last drop."
-    },
-    {
-      "id": 5,
-      "name": "Kojiro Red Ramen",
-      "restaurant": "Ramen-Ya",
-      "image": "kojiro.jpg",
-      "rating": 6,
-      "comment": "Perfect for a cold night."
+      "id": "8193",
+      "name": "Spicy Chicken Tacos",
+      "image": "https://cdn.shopify.com/s/files/1/1785/5627/t/60/assets/art_of_spicing-1695928985957_1600x.jpg?v=1695928986",
+      "rating": "6",
+      "comment": ""
     }
   ]
 }

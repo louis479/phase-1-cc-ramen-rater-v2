@@ -1,57 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramen Rater</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer type="module" src="./src/index.js"></script> <!-- Corrected path -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Rating App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h3>Ramen Rater</h3>
-  </header>
-
-  <div id="ramen-menu"></div>
-
-  <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
-  </div>
-
-  <h3>Rating:</h3>
-  <p>
-    <span id="rating-display">Insert rating here</span> / 10
-  </p>
-  <h3>Comment:</h3>
-  <p id="comment-display">Insert comment here</p>
-
-  <form id="new-ramen">
-    <h4>Add New Ramen</h4>
-    <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" autocomplete="off" />
-    <label for="new-restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" autocomplete="off" />
-    <label for="new-image">Image: </label>
-    <input type="text" name="image" id="new-image" autocomplete="off" />
-    <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" autocomplete="off" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" id="new-comment" autocomplete="off"></textarea>
-    <input type="submit" id="submit-button" value="Create" />
-  </form>
-
-  <!-- Optional Edit Form -->
-  <form id="edit-ramen">
-    <label for="edit-rating">Edit Rating: </label>
-    <input type="number" id="edit-rating" name="edit-rating" />
-    <label for="edit-comment">Edit Comment: </label>
-    <textarea id="edit-comment" name="edit-comment"></textarea>
-    <input type="submit" value="Update" />
-  </form>
-
+    <header>
+        <h1>Taco Rating App</h1>
+    </header>
+    <main>
+        <div id="taco-menu"></div>
+        <div id="taco-detail">
+            <h2 id="taco-title"></h2>
+            <img id="taco-image" src="" alt="">
+            <p id="taco-description"></p>
+            <p id="taco-rating"></p>
+            <p id="taco-comment"></p>
+        </div>
+        <form id="new-taco">
+            <h3>Add a New Taco</h3>
+            <input type="text" id="new-taco-name" placeholder="Taco Name" required>
+            <input type="text" id="new-taco-image" placeholder="Image URL" required>
+            <button type="submit">Add Taco</button>
+        </form>
+        <form id="edit-taco">
+            <h4>Update Taco</h4>
+            <label for="new-rating">Rating:</label>
+            <input type="number" name="rating" id="new-rating" />
+            <label for="new-comment">Comment:</label>
+            <textarea name="new-comment" id="new-comment"></textarea>
+            <input type="submit" value="Update" />
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taco Rating App. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
+
 
 
