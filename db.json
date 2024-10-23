@@ -1,25 +1,26 @@
 {
-  "tacos": [
-    {
-      "id": "1",
-      "name": "Spicy Beef Taco",
-      "image": "https://www.supervalu.co.uk/wp-content/uploads/2020/10/beef-tacos.jpg",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "2",
-      "name": "Veggie Taco",
-      "image": "https://www.twopeasandtheirpod.com/wp-content/uploads/2021/06/Veggie-Tacos4577.jpg",
-      "rating": "8",
-      "comment": "delicious"
-    },
-    {
-      "id": "8193",
-      "name": "Spicy Chicken Tacos",
-      "image": "https://cdn.shopify.com/s/files/1/1785/5627/t/60/assets/art_of_spicing-1695928985957_1600x.jpg?v=1695928986",
-      "rating": "6",
-      "comment": ""
-    }
-  ]
-}
+    "ramens": [
+      {
+        "id": "1",
+        "name": "Shoyu Ramen",
+        "image": "https://example.com/shoyu.jpg",
+        "rating": "7",
+        "comment": "Delish. Can't go wrong with a classic!"
+      },
+      {
+        "id": "2",
+        "name": "Naruto Ramen",
+        "image": "https://example.com/naruto.jpg",
+        "rating": "10",
+        "comment": "My absolute fave!"
+      },
+      {
+        "id": "3",
+        "name": "Nirvana Shiromaru",
+        "image": "https://example.com/nirvana.jpg",
+        "rating": "7",
+        "comment": "Do buy the hype."
+      }
+    ]
+  }
+  

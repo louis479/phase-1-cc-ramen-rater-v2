@@ -3,41 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taco Rating App</title>
+    <title>Ramen Rater</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Taco Rating App</h1>
-    </header>
-    <main>
-        <div id="taco-menu"></div>
-        <div id="taco-detail">
-            <h2 id="taco-title"></h2>
-            <img id="taco-image" src="" alt="">
-            <p id="taco-description"></p>
-            <p id="taco-rating"></p>
-            <p id="taco-comment"></p>
-        </div>
-        <form id="new-taco">
-            <h3>Add a New Taco</h3>
-            <input type="text" id="new-taco-name" placeholder="Taco Name" required>
-            <input type="text" id="new-taco-image" placeholder="Image URL" required>
-            <button type="submit">Add Taco</button>
-        </form>
-        <form id="edit-taco">
-            <h4>Update Taco</h4>
-            <label for="new-rating">Rating:</label>
-            <input type="number" name="rating" id="new-rating" />
-            <label for="new-comment">Comment:</label>
-            <textarea name="new-comment" id="new-comment"></textarea>
-            <input type="submit" value="Update" />
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 2024 Taco Rating App. All rights reserved.</p>
-    </footer>
-    <script src="index.js"></script>
+    <h1>Ramen Rater</h1>
+    
+    <div id="ramen-menu"></div>
+    
+    <div id="ramen-detail">
+        <img class="detail-image" src="" alt="Ramen Detail" />
+        <h2 class="name"></h2>
+        <h3 class="restaurant"></h3>
+        <p id="rating-display"></p>
+        <p id="comment-display"></p>
+    </div>
+
+    <form id="new-ramen">
+        <input type="text" id="new-name" name="new-name" placeholder="Ramen Name" required />
+        <input type="text" id="new-restaurant" name="new-restaurant" placeholder="Restaurant" required />
+        <input type="text" id="new-image" name="new-image" placeholder="Image URL" required />
+        <input type="number" id="new-rating" name="new-rating" placeholder="Rating" required min="1" max="10" />
+        <textarea id="new-comment" name="new-comment" placeholder="Comment" required></textarea>
+        <button type="submit" id="submit-button">Add Ramen</button>
+    </form>
+
+    <script type="module" src="index.js"></script>
 </body>
 </html>
 
