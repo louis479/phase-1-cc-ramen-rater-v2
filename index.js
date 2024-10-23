@@ -3,7 +3,7 @@
 // Example fetch function with error handling
 async function fetchRamens() {
     try {
-        const response = await fetch('https://github.com/louis479/phase-1-cc-ramen-rater-v2/blob/main/db.json'); // Update this URL to the correct location of your db.json
+        const response = await fetch('https://github.com/louis479/phase-1-cc-ramen-rater-v2/blob/02da0177828b09251c658b9e8e7e83ffcd2516d3/db.json'); // Update this URL to the correct location of your db.json
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
