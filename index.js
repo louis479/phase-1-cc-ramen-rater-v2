@@ -1,14 +1,12 @@
-// index.js
-
-// Example fetch function with error handling
+// Fetch existing ramen data
 async function fetchRamens() {
     try {
-        const response = await fetch('https://github.com/louis479/phase-1-cc-ramen-rater-v2/blob/02da0177828b09251c658b9e8e7e83ffcd2516d3/db.json'); // Update this URL to the correct location of your db.json
+        const response = await fetch('http://localhost:3000/ramens');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        return data.ramens; // Access the 'ramens' property
+        return data; // Return the ramen array
     } catch (error) {
         console.error('Fetch error:', error);
     }
@@ -74,6 +72,18 @@ function addRamenToMenu(ramen) {
     ramenItem.innerHTML = `<img src="${ramen.image}" alt="${ramen.name}"><p>${ramen.name}</p>`;
     ramenItem.addEventListener('click', () => handleClick(ramen));
     ramenMenuDiv.appendChild(ramenItem);
+
+    // Send POST request to add new ramen to the JSON Server
+    fetch('http://localhost:3000/ramens', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(ramen),
+    })
+    .then(response => response.json())
+    .then(data => console.log('New ramen added:', data))
+    .catch(error => console.error('Error adding new ramen:', error));
 }
 
 // Initialize application on DOM content loaded
@@ -82,5 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const ramenForm = document.getElementById('new-ramen');
     addSubmitListener(ramenForm);
 });
+
 
 

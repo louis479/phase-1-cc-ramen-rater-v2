@@ -1,26 +1,65 @@
 {
-    "ramens": [
-      {
-        "id": "1",
-        "name": "Shoyu Ramen",
-        "image": "https://example.com/shoyu.jpg",
-        "rating": "7",
-        "comment": "Delish. Can't go wrong with a classic!"
-      },
-      {
-        "id": "2",
-        "name": "Naruto Ramen",
-        "image": "https://example.com/naruto.jpg",
-        "rating": "10",
-        "comment": "My absolute fave!"
-      },
-      {
-        "id": "3",
-        "name": "Nirvana Shiromaru",
-        "image": "https://example.com/nirvana.jpg",
-        "rating": "7",
-        "comment": "Do buy the hype."
-      }
-    ]
-  }
-  
+  "ramens": [
+    {
+      "id": "1",
+      "name": "Shoyu Ramen",
+      "image": "https://example.com/shoyu.jpg",
+      "rating": "7",
+      "comment": "Delish. Can't go wrong with a classic!"
+    },
+    {
+      "id": "2",
+      "name": "Naruto Ramen",
+      "image": "https://example.com/naruto.jpg",
+      "rating": "10",
+      "comment": "My absolute fave!"
+    },
+    {
+      "id": "3",
+      "name": "Nirvana Shiromaru",
+      "image": "https://example.com/nirvana.jpg",
+      "rating": "7",
+      "comment": "Do buy the hype."
+    },
+    {
+      "id": "2ce3",
+      "name": "Shoyu Ramen",
+      "restaurant": "Bizentei, Tokyo",
+      "image": "https://www.justonecookbook.com/wp-content/uploads/2023/04/Shoyu-Ramen-8285-II.jpg",
+      "rating": "10",
+      "comment": "Delicious!\n"
+    },
+    {
+      "id": "eb84",
+      "name": "Shio (Salt) Ramen",
+      "restaurant": "Namiko Hirasawa Chen",
+      "image": "https://www.justonecookbook.com/wp-content/uploads/2022/08/Shio-Ramen-9487-II.jpg",
+      "rating": "9",
+      "comment": "A healthy meal to take in Lunch Break."
+    },
+    {
+      "id": "44d9",
+      "name": "Naruto Ramen",
+      "restaurant": "Bizentei, Tokyo",
+      "image": "https://d3s8tbcesxr4jm.cloudfront.net/recipe-images/v0/japanese-naruto-ramen_large.jpg",
+      "rating": "9",
+      "comment": "A Nolstagic meal with fond memories."
+    },
+    {
+      "id": "c3db",
+      "name": "Kaisen Ramen (Seafood-based)",
+      "restaurant": "Pacha Nikkei",
+      "image": "https://popmenucloud.com/cdn-cgi/image/width%3D2304%2Cheight%3D2304%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/mduinpwg/4c5d0e11-fb3a-46e7-a7b5-e165502e08f7.jpg",
+      "rating": "10",
+      "comment": "Excellent, SeaFood Choice."
+    },
+    {
+      "id": "f703",
+      "name": "Rich and Creamy Tonkotsu Ramen Broth",
+      "restaurant": "Serious Eats",
+      "image": "https://www.seriouseats.com/thmb/VRNLs0nXGchoBlj5LJ5hxCzlcbU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/rich-and-creamy-tonkotsu-ramen-broth-from-scratch-recipe-Diana-Chistruga-hero-6d318fadcca64cc9ac3e1c40fc7682fb.JPG",
+      "rating": "9",
+      "comment": "Highly recommended for couples and close friends"
+    }
+  ]
+}
